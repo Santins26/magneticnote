@@ -1,1 +1,1 @@
-# fridgesticker
+# magneticnote
