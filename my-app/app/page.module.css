@@ -314,3 +314,201 @@
 .myList {
     box-shadow: 0 1px 24px rgba(0, 0, 0, 0.4);
 }
+
+@media (max-width: 768px) {
+    .main {
+        padding: 16px;
+        overflow-x: hidden;
+    }
+
+    .title {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .search {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
+        padding: 12px;
+        margin-bottom: 25px;
+    }
+
+    .search input {
+        width: 100%;
+        box-sizing: border-box;
+        min-width: 0;
+    }
+
+    .search button {
+        padding: 10px;
+    }
+
+    .rowWrapper {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .movieRow {
+        gap: 12px;
+        padding: 10px 0 16px;
+    }
+
+    .rowCard {
+        flex: 0 0 135px;
+    }
+
+    .poster {
+        height: 205px;
+    }
+
+    .rowArrow {
+        font-size: 36px;
+    }
+
+    .info h2 {
+        font-size: 14px;
+        padding: 0 8px;
+        overflow-wrap: anywhere;
+    }
+
+    .info p {
+        font-size: 11px;
+        padding: 0 8px;
+    }
+
+    .info button,
+    .info button:hover {
+        display: block;
+        margin: 8px auto;
+        font-size: 12px;
+    }
+
+    .rating {
+        width: fit-content;
+        max-width: calc(100% - 16px);
+        box-sizing: border-box;
+        margin: 6px auto;
+        font-size: 12px;
+    }
+
+    .movies {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+    }
+
+    .card {
+        min-width: 0;
+    }
+
+    .card .poster {
+        height: auto;
+        aspect-ratio: 2 / 3;
+        object-fit: cover;
+    }
+
+    .modalOverlay {
+        padding: 12px;
+        overflow-y: auto;
+        align-items: flex-start;
+    }
+
+    .modal {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        padding: 16px;
+        margin: auto 0;
+        max-height: calc(100dvh - 24px);
+        overflow-y: auto;
+        box-sizing: border-box;
+    }
+
+    .modal img {
+        width: 150px;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .modal button {
+        margin: 5px;
+        max-width: 100%;
+    }
+
+    .login input {
+        width: 100%;
+        box-sizing: border-box;
+        margin: 8px 0;
+    }
+
+    .login h1 {
+        font-size: 24px;
+        overflow-wrap: anywhere;
+    }
+
+    .login button {
+        margin: 5px;
+    }
+
+    .confirmationModal {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+        flex-direction: column;
+        align-items: center;
+        padding: 16px;
+    }
+
+    .confirmationButtons {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+        margin-left: 0;
+        gap: 12px;
+        flex-wrap: wrap;
+    }
+
+    .suggestionSection {
+        padding: 12px;
+    }
+
+    .suggestionSection h3 {
+        max-width: 100%;
+    }
+
+    .sectionTitle {
+        font-size: 20px;
+        overflow-wrap: anywhere;
+    }
+
+    .mylist h2 {
+        font-size: 18px;
+    }
+}
+
+/* Celulares estreitos */
+@media (max-width: 380px) {
+    .main {
+        padding: 10px;
+    }
+
+    .rowCard {
+        flex-basis: 120px;
+    }
+
+    .poster {
+        height: 180px;
+    }
+
+    .movies {
+        gap: 8px;
+    }
+
+    .rowArrow {
+        font-size: 28px;
+    }
+
+    .modal {
+        padding: 12px;
+    }
+}
