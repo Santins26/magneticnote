@@ -1,0 +1,316 @@
+.main {
+    min-height: 100vh;
+    padding: 40px;
+    background: rgb(61, 61, 61);
+    color: white;
+}
+
+.title {
+    margin-top: 10px;
+    
+}
+
+
+.search {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 40px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+.search input {
+    padding: 10px;
+    width: 300px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+
+}
+
+.search button {
+    cursor: pointer;
+    
+    
+}
+.search button:hover {
+    color: gray
+    
+    
+    
+}
+
+.rowWrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.movieRow {
+  display: flex;
+  gap: 15px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+  width: 100%;
+  padding: 10px 0 20px;
+  
+}
+
+.movieRow::-webkit-scrollbar {
+  display: none;
+}
+
+.rowArrow {
+  position: absolute;
+  z-index: 2;
+
+
+  color: rgb(253, 252, 252);
+
+  font-size: 60px;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rowArrow.left {
+  left: 0;
+}
+
+.rowArrow.right {
+  right: 0;
+}
+
+.rowArrow:hover {
+  color: #222;
+}
+
+.rowCard {
+  flex: 0 0 180px;
+  background: rgba(169, 153, 160, 0.3);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.6);
+  
+
+    
+}
+
+.rowCard:hover {
+    border: rgb(197, 194, 194) solid 2px;
+
+}
+
+.poster {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    height: 300px;
+    
+    
+
+}
+
+.info h2 {
+    font-size: 18px;
+    margin: 0 0 8px;
+    color: whitesmoke;
+    font-weight: bold;
+}
+
+.info p {
+    font-size: 10px;
+    color: white;
+    font-style: italic;
+}
+
+.modalOverlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.75);
+     z-index: 9999;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 20px;
+}
+
+.modal {
+    background: #222;
+    color: white;
+
+    max-width: 800px;
+    width: 100%;
+
+    display: flex;
+    gap: 25px;
+
+    padding: 25px;
+    border-radius: 10px;
+    
+}
+
+.modal img {
+    width: 250px;
+    height: auto;
+    object-fit: cover;
+}
+
+.modal button {
+  padding: 10px 20px;
+  cursor: pointer;
+  background: whitesmoke;
+  color: black;
+  border-radius: 8px;
+  margin-right: 20px;
+}
+
+.login button {
+  padding: 6px 12px;
+  cursor: pointer;
+  background: whitesmoke;
+  color: black;
+  border-radius: 8px;
+  margin-right: 20px;
+
+}
+
+.login input {
+    background-color: rgba(255, 255, 255, 0.5);
+    margin-right: 10px;
+    padding: 6px;
+    margin-top: 10px;
+    margin-left: 10px;
+    
+}
+
+.login h1 {
+    font-size: 30px;
+    color: whitesmoke;
+    border: grey solid 1.5px;
+    padding: 10px;
+    background: black;
+}
+
+
+.mylist h2 {
+    font-size: 20px;
+    
+}
+
+.confirmationModal {
+    background: rgba(134, 130, 130, 0.6);
+    padding: 20px;
+    width: 800px;
+    border-radius: 10px;
+    display: flex;
+    max-width: 90%;
+    text-align: center;
+    gap: 10px;
+    
+    
+
+}
+
+.confirmationButtons {
+    background: rgba(0, 0, 0, 0.5);
+    width: 180px;
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-left: 20px;
+    border-radius: 10px;
+
+
+}
+
+.sectionTitle {
+  margin: 30px 0 15px;
+  box-shadow: 0 1px 24px rgba(0, 0, 0, 0.4);
+}
+
+.movies {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 25px;
+  
+}
+
+.card {
+  flex: 0 0 180px;
+  background: #222;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 1px 24px rgba(0, 0, 0, 0.4);
+
+    
+}
+
+.card:hover {
+    border: rgb(197, 194, 194) solid 2px;
+
+}
+
+.sectionTitle {
+    font-weight: bold;
+    
+
+}
+
+.suggestionSection{
+    background: rgba(33, 32, 32, 0.5);
+    padding: 22px;
+    box-shadow: 0 1px 24px rgba(0, 0, 0, 0.4);
+
+}
+
+.myList {
+    font-weight: bold;
+}
+
+.suggestionSection h3{
+    background: rgb(38, 100, 154);
+    color: rgb(245, 242, 242);
+    width: 80px;
+    text-align: center;
+    border-radius: 3px;
+    margin-bottom: 10px;
+
+}
+
+.info button {
+    color: rgb(248, 248, 248);
+    margin-left: 70px;
+    font-size: 12px;
+}
+
+.info button:hover {
+    color: rgb(138, 132, 132);
+    margin-left: 70px;
+    font-size: 12px;
+    
+}
+
+
+.rating {
+  color: #ffffff;
+  font-weight: bold;
+  margin: 6px 0;
+  font-size: 14px;
+  background: rgba(0, 0, 0, 0.4);
+  width: 90px;
+  padding: 3px;
+  text-align: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin-left: 45px;
+}
+
+.myList {
+    box-shadow: 0 1px 24px rgba(0, 0, 0, 0.4);
+}

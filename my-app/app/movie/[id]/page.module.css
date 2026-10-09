@@ -1,0 +1,26 @@
+.movieinfo button{
+    background: black;
+    border-radius: 4px;
+    padding: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+
+}
+
+.movieinfo button:hover{
+    background: rgb(87, 84, 84);
+    
+}
+
+.movieinfo h1{
+    font-weight: bold;
+}
+
+.movieinfo img{
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.6);
+}
+
+.returnbutton button:hover {
+    color: black;
+
+}
