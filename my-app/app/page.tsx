@@ -16,7 +16,7 @@ type Movie = {
 
 const categories = [
   { name: "Terror", id: 27},
-  { name: "Cómedia", id: 35},
+  { name: "Comédia", id: 35},
   { name: "Ação", id: 28},
   { name: "Ficção Científica", id: 878},
   { name: "Animação", id:16},
